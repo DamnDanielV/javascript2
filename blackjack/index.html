@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="titulo">
+        Black Jack
+    </header>
+    <div class="row mt-2">
+        <div id="divBotones" class="col text-center">
+            <button id="botonNuevo" class="btn btn-danger">Nuevo juego</button>
+            <button id="botonPedir" class="btn btn-primary">Pedir carta</button>
+            <button id="botonDetener" class="btn btn-primary">Detener</button>
+        </div>
+    </div>
+
+    <div class="row container">
+        <div class="col">
+            <h1>Jugador 1 - <small>0</small></h1>
+            
+            <div id="jugador-cartas">
+
+            </div>
+        </div>
+    </div>
+        <div class="row container mt-2">
+        <div class="col">
+            <h1>computador 1 - <small>0</small></h1>
+            <div id="computador-cartas">
+                <img src="assets/cartas/4C.png" class="carta">
+                <img src="assets/cartas/8H.png" class="carta">
+                <img src="assets/cartas/4H.png" class="carta">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+</body>
+</html>
